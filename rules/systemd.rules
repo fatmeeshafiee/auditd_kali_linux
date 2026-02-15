@@ -1,0 +1,3 @@
+# Monitor systemd service files
+-w /etc/systemd/system -p rw -k service
+-w /lib/systemd/system -p rw -k service

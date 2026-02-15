@@ -1,0 +1,5 @@
+# Monitor /etc/passwd file
+-w /etc/passwd -p rwxa -k passwd
+
+# Monitor /etc/shadow file
+-w /etc/shadow -p rwa -k shadow

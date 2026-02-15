@@ -1,0 +1,2 @@
+# Monitor network-related syscalls
+-a always,exit -S socket -S bind -S connect -S accept -F key=Network

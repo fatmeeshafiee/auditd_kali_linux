@@ -1,0 +1,10 @@
+# Monitor execution in /tmp and /home directories
+-a always,exit -F arch=b64 -S execve -F dir=/tmp/ -k exec_tmp
+-a always,exit -F arch=b64 -S execve -F dir=/home/ -k exec_home
+
+# Monitor execution of all binaries except /bin/cat
+-a always,exit -F arch=b64 -S execve -S execveat -F exe!=/bin/cat -k exec
+
+# Generic execution monitoring
+-a always,exit -F arch=b64 -S execve -F key=process_execution
+-a always,exit -F arch=b64 -S execveat -F key=execveat
