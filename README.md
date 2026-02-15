@@ -36,7 +36,7 @@ auditd-linux-kali/
 ├── scripts/           # Helper scripts
 │   └── install_rules.sh
 └── .gitignore         # Files to exclude from git
-
+```
 ---
 🚀 Installation
 
@@ -44,10 +44,8 @@ Clone the repository:
 git clone https://github.com/username/auditd-linux-kali.git
 cd auditd-linux-kali
 
-
 Run the installation script:
 sudo bash scripts/install_rules.sh
-
 
 This will:
 Apply all audit rules
@@ -66,3 +64,4 @@ sudo service auditd restart
 Check audit logs:
 sudo ausearch -k <key_name>
 sudo aureport -f
+
